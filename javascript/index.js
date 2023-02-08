@@ -13,6 +13,14 @@ let tokyoTimeElement= tokyoElement.querySelector(".time")
 let tokyoTime = moment().tz("Asia/Tokyo");
 tokyoDateElement.innerHTML= tokyoTime.format("MMMM DD, YYYY ")
 tokyoTimeElement.innerHTML= tokyoTime.format("h:mm:ss [<small>]A[</small>]")
+
+//Puerto Rico
+let puertoRicoElement = document.querySelector("#puertoRico")
+let puertoRicoDateElement= puertoRicoElement.querySelector(".date")
+let puertoRicoTimeElement= puertoRicoElement.querySelector(".time")
+let puertoRicoTime = moment().tz("America/Puerto_Rico");
+puertoRicoDateElement.innerHTML= puertoRicoTime.format("MMMM DD, YYYY ");
+puertoRicoTimeElement.innerHTML= puertoRicoTime.format("h:mm:ss [<small>]A[</small>]");
 }
 
 function updateCity(event){
@@ -30,7 +38,9 @@ function updateCity(event){
       <div class="date">${cityTime.format("MMMM DD, YYYY")}</div>
     </div>
     <div class="time">${cityTime.format("h:mm:ss [<small>]A[</small>]")}</div>
-  </div>
+    </div>
+    <a id="homepage" href="/">Back to homepage</a>
+    
 `
 }
 setInterval(updateTime,1000);
