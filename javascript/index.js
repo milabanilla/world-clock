@@ -1,11 +1,11 @@
-//Los angeles
+//Seoul
 function updateTime(){
-let losAngelesElement = document.querySelector("#los-angeles")
-let losAngelesDateElement= losAngelesElement.querySelector(".date")
-let losAngelesTimeElement= losAngelesElement.querySelector(".time")
-let losAngelesTime = moment().tz("America/Los_Angeles");
-losAngelesDateElement.innerHTML= losAngelesTime.format("MMMM DD, YYYY ")
-losAngelesTimeElement.innerHTML= losAngelesTime.format("h:mm:ss [<small>]A[</small>]")
+let seoulElement = document.querySelector("#seoul")
+let seoulDateElement= seoulElement.querySelector(".date")
+let seoulTimeElement= seoulElement.querySelector(".time")
+let seoulTime = moment().tz("Asia/Seoul");
+seoulDateElement.innerHTML= seoulTime.format("MMMM DD, YYYY ")
+seoulTimeElement.innerHTML= seoulTime.format("h:mm:ss [<small>]A[</small>]")
 //Tokyo
 let tokyoElement = document.querySelector("#tokyo")
 let tokyoDateElement= tokyoElement.querySelector(".date")
@@ -14,13 +14,13 @@ let tokyoTime = moment().tz("Asia/Tokyo");
 tokyoDateElement.innerHTML= tokyoTime.format("MMMM DD, YYYY ")
 tokyoTimeElement.innerHTML= tokyoTime.format("h:mm:ss [<small>]A[</small>]")
 
-//Puerto Rico
-let puertoRicoElement = document.querySelector("#puertoRico")
-let puertoRicoDateElement= puertoRicoElement.querySelector(".date")
-let puertoRicoTimeElement= puertoRicoElement.querySelector(".time")
-let puertoRicoTime = moment().tz("America/Puerto_Rico");
-puertoRicoDateElement.innerHTML= puertoRicoTime.format("MMMM DD, YYYY ");
-puertoRicoTimeElement.innerHTML= puertoRicoTime.format("h:mm:ss [<small>]A[</small>]");
+//El_Salvador
+let elSalvadorElement = document.querySelector("#elSalvador")
+let elSalvadorDateElement= elSalvadorElement.querySelector(".date")
+let elSalvadorTimeElement= elSalvadorElement.querySelector(".time")
+let elSalvadorTime = moment().tz("America/El_Salvador");
+elSalvadorDateElement.innerHTML= elSalvadorTime.format("MMMM DD, YYYY ");
+elSalvadorTimeElement.innerHTML= elSalvadorTime.format("h:mm:ss [<small>]A[</small>]");
 }
 
 function updateCity(event){
